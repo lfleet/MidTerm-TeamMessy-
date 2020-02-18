@@ -1,6 +1,6 @@
 <!--Complete this missing values below
-##Author: Place Developers Name
-##Date Modified:
+##Author: Austin Halley and Lexi Fleet
+##Date Modified: Feb 17
 ##Description: This is the most difficult one. Good Luck! -->
 <html>
   <title></title>
@@ -10,6 +10,8 @@
     </center>
   <body>
     <p id="cmps"><p>
+      <p id="win"><p>
+        <p id="l"></p>
       <p id="greet"><p>
         <p id="other"><p>
           <p id=""><p>
@@ -23,13 +25,15 @@
       var win = "You Win";
       var lose = "You Lose";
       var i;
-
       for(i = 0; Math.random() > 0.24; i++){
+
         document.getElementById("cmps").innerHTML = randomValue;
       if(randomValue > 0.24){
-        document.getElementById("greet").innerHTML = win + " " + (i + " Wins");
-      } else {
-        document.getElementById("other").innerHTML = lose + " "+ (i + " Losses");
+        document.getElementById("win").innerHTML = (win);
+        document.getElementById("greet").innerHTML = ("Wins = " + i);
+      } else{
+        document.getElementById("l").innerHtml = (lose);
+        document.getElementById("other").innerHTML = ("Lose = " + i);
       }
     }
   }
