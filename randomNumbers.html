@@ -1,0 +1,39 @@
+<!--Complete this missing values below
+##Author: Place Developers Name
+##Date Modified:
+##Description: This is the most difficult one. Good Luck! -->
+<html>
+  <title></title>
+  <head>
+    <center>
+      <br>
+    </center>
+  <body>
+    <p id="cmps"><p>
+      <p id="greet"><p>
+        <p id="other"><p>
+          <p id=""><p>
+
+  <center><button onclick="myFunction()">Roll Your Dice</button></center>
+  <!--function-->
+  <script>
+    function myFunction(){
+      var randomValue = Math.random();
+      var text = "";
+      var win = "You Win";
+      var lose = "You Lose";
+      var i;
+
+      for(i = 0; Math.random() > 0.24; i++){
+        document.getElementById("cmps").innerHTML = randomValue;
+      if(randomValue > 0.24){
+        document.getElementById("greet").innerHTML = win + " " + (i + " Wins");
+      } else {
+        document.getElementById("other").innerHTML = lose + " "+ (i + " Losses");
+      }
+    }
+  }
+
+</script>
+</body>
+</html>
